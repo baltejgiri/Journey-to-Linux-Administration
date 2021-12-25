@@ -147,5 +147,14 @@
 				rwx					
 		read Write Execute
 		
-	#chmod
-		- Changes the permissions on a file by modifying the file mode bits
+**chmod**
+Changes the permissions on a file by modifying the file mode bits.
+Two methods to represends permissions
+- Octal (e.g., 755, 644, and 777)
+- Symbolic (e.g., a-r,g+w, and o-x)
+
+Octal File Permissions
+			Read (4)	Write (2)	Execute (1)	Result
+		User	r		w		x		7
+		Group	r		-		x		5
+		Others	r		-		-		4
